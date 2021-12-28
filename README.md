@@ -52,3 +52,7 @@ npm run build
 The resulting built custom element can be found in the `dist` directory. From here you can start a simple HTTP server with `npm run start` and navigate to http://localhost:3000/examples/. Note that if you make changes to source you will need to run `npm run build` again and refresh the page.
 
 Tests should be written and live next to the source code it tests. The file name should match that of what it tests with an extension of `.test.ts`. Tests can be ran with `npm run test`.
+
+## Notes
+
+- Special thanks to [Github Custom Element Boilerplate](https://github.com/github/custom-element-boilerplate) project for a lot of inspiration with this template.
