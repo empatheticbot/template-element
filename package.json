@@ -2,6 +2,7 @@
   "name": "@empatheticbot/template-element",
   "version": "0.1.0",
   "description": "Template for new custom elements.",
+  "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -14,6 +15,7 @@
     "build": "tsc && rollup -c",
     "prepublishOnly": "npm run build",
     "start": "serve .",
+    "test": "jest ./src/**",
     "update": "npm-check -u"
   },
   "repository": {
@@ -35,15 +37,23 @@
   },
   "homepage": "https://github.com/empatheticbot/template-element#readme",
   "devDependencies": {
-    "eslint": "^7.32.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-custom-elements": "^0.0.2",
+    "@babel/core": "7.16.5",
+    "@babel/preset-env": "7.16.5",
+    "@babel/preset-typescript": "7.16.5",
+    "@testing-library/dom": "8.11.1",
+    "@testing-library/jest-dom": "5.16.1",
+    "babel-jest": "27.4.5",
+    "eslint": "7.32.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-custom-elements": "0.0.4",
     "eslint-plugin-github": "4.1.5",
+    "jest": "27.4.5",
     "npm-check": "5.9.2",
-    "prettier": "^2.4.1",
-    "rollup": "^2.56.0",
-    "serve": "12.0.0",
-    "typescript": "4.3.5"
+    "rollup": "2.62.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "serve": "13.0.2",
+    "ts-node": "10.4.0",
+    "typescript": "4.5.4"
   },
   "publishConfig": {
     "access": "public"
