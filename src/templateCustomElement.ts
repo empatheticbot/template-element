@@ -13,7 +13,11 @@ export class TemplateCustomElement extends HTMLElement {
 
   disconnectedCallback(): void {}
 
-  attributeChangedCallback(attrName: string, oldValue: string, newValue: string): void {}
+  attributeChangedCallback(
+    attrName: string,
+    oldValue: string,
+    newValue: string
+  ): void {}
 }
 
 if (!customElements.get('template-custom')) {
